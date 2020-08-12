@@ -1,9 +1,6 @@
-
-'''
-Wheather API to generat local wharatrher
-'''
+import emoji
 import requests, json
-api_key = ""
+api_key = "380fc9***1b5f"
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
 city_name = input("Enter city name : ")
 complete_url = base_url + "appid=" + api_key + "&q=" + city_name
@@ -16,7 +13,7 @@ if x["cod"] != "404":
 	current_humidiy = y["humidity"]
 	z = x["weather"]
 	weather_description = z[0]["description"]
-	print(" Temperature (in kelvin unit) = " +
+	print(" 🌡️ = " +
 					str(current_temperature) +
 		"\n atmospheric pressure (in hPa unit) = " +
 					str(current_pressure) +
