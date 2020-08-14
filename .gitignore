@@ -156,3 +156,4 @@ dmypy.json
 dir_to_ignore/
 
 .PyNotifier
+.Slack
