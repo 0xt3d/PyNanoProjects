@@ -1,6 +1,6 @@
-from pytube import YouTube, Playlist
-
-
-yt = YouTube('https://www.youtube.com/watch?v=Nxs_mpWt2BA')
-stream = yt.streams.first()
-stream.download('C://users//aditya//downloads')
+#importing the module 
+from pytube import YouTube
+#where to save 
+link = input("YouTube Video Link")
+YouTube(link).streams.first().download('C:\\Users\\Aditya\\Downloads')
+print("Please Check your Downloads Folder") 
