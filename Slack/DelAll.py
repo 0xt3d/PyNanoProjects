@@ -1,7 +1,7 @@
 import requests
 import time
 import json
-
+import Config as env 
 token = 'd3a000b5fc4950fe536c3810e6b6edb1'
 
 #Delete files older than this:
@@ -33,3 +33,5 @@ def delete_files(file_ids):
 files = list_files()
 file_ids = [f['id'] for f in files]
 delete_files(file_ids)
+
+print(env.API_KEY)

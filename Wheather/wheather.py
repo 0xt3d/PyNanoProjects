@@ -1,6 +1,6 @@
 import emoji
 import requests, json
-api_key = "380fc9***1b5f"
+api_key = "****f753e38a46"
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
 city_name = input("Enter city name : ")
 complete_url = base_url + "appid=" + api_key + "&q=" + city_name
